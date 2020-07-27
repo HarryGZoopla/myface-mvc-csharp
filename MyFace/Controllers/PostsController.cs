@@ -24,6 +24,13 @@ namespace MyFace.Controllers
             var viewModel = new PostsViewModel(posts);
             return View(viewModel);
         }
+        // [HttpGet("next-page")]
+        // public IActionResult NextPage(int pageNumber = 0, int pageSize = 10)
+        // {
+        //     var posts = _posts.GetAll(pageNumber += 1, pageSize);
+        //     var viewModel = new PostsViewModel(posts);
+        //     return View(viewModel);
+        // }
 
         [HttpGet("create")]
         public IActionResult CreatePostPage()

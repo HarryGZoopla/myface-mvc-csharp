@@ -3,3 +3,17 @@
 @{
     Layout = "_Layout";
 }
+
+<form method="POST" action="/posts/create">
+    <label for="message-input">Message</label>
+    <input id="message-input" type="text" name="Message" required/>
+
+    <label for="imageURL-input">Image URL</label>
+    <input id="imageURL-input" type="url" name="ImageURL"/>
+
+    <label for="userID-input">User ID</label>
+    <input id="userID-input" type="number" name="UserId" required/>
+
+    <button type="submit">Create post</button>
+
+</form>
